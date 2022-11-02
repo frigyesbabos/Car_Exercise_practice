@@ -9,6 +9,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ExerciseComponent } from './components/exercise/exercise.component';
 import { CarService } from './services/car.service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CarsComponent } from './pages/cars/cars.component';
+import { CarDetailsComponent } from './pages/car-details/car-details.component';
+import { NewCarComponent } from './pages/new-car/new-car.component';
+import { CarCardComponent } from './components/car-card/car-card.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +20,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     WelcomeComponent,
     NavbarComponent,
     ExerciseComponent,
+    CarsComponent,
+    CarDetailsComponent,
+    NewCarComponent,
+    CarCardComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+<div class="main-card-container">
+  <img src="assets/car-dummy-1.jpg" alt="" />
+  <span
+    ><b>Car Model: {{ model }}</b></span>
+  <br />
+  <hr />
+  <span> Made in {{ origin }}</span>
+  <br />
+  <hr />
+  <span> Produce date: {{ firstRegistration }}</span>
+  <br />
+  <hr />
+  <div class="button-container">
+    <button style="background-color: rgb(208, 34, 34)" (click)="removeCar()">Delete</button>
+    <button style="background-color: rgb(134, 69, 196)">To details</button>
+  </div>
+</div>

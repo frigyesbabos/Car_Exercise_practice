@@ -1,7 +1,7 @@
 export interface Car {
   id: number;
   model: string;
-  firstRegistration: string;
+  firstRegistration: number;
   origin: string;
   description: string;
   carDetails: {

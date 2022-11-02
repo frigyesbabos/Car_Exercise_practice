@@ -1,0 +1,32 @@
+.searchbar-container {
+  width: 1150px;
+  height: 100px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  background-color: white;
+  border-color: green 3px solid;
+}
+
+input:hover {
+  background-color: aliceblue;
+}
+
+.counter-container {
+  width: 1150px;
+  height: 100px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+}
+
+

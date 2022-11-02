@@ -1,0 +1,20 @@
+<form>
+  <div class="searchbar-container">
+    <input type="text" style="width: 500px" placeholder="Search for a Car..." />
+  </div>
+</form>
+
+<div class="counter-container">
+  <p>Cars has been found!</p>
+</div>
+
+<div class="card-container" *ngIf="cars$ | async as cars">
+  <ng-container *ngFor=" let cars of cars$ | async">
+    <app-car-card
+    [object]="cars"
+    [model]="cars.model"
+    [origin]="cars.origin"
+    [firstRegistration]="cars.firstRegistration"
+    ></app-car-card>
+  </ng-container>
+</div>
