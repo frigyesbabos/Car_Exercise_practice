@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Car } from 'src/app/models/car.vo';
 import { CarService } from 'src/app/services/car.service';
@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./cars.component.css']
 })
 export class CarsComponent implements OnInit {
+  @Input() car$: Car[] =[];
 
   cars$: Observable<Car[]>
 

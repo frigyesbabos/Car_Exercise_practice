@@ -5,7 +5,7 @@
 </form>
 
 <div class="counter-container">
-  <p>Cars has been found!</p>
+  <p>{{car$.length}} Cars has been found!</p>
 </div>
 
 <div class="card-container" *ngIf="cars$ | async as cars">

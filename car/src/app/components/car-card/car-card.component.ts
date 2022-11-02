@@ -28,9 +28,8 @@ export class CarCardComponent implements OnInit {
 
   toDetails() {
     this.carService.selectedCar = this.object;
-    this.router.navigate(['cardetails']),
-      {
+    this.router.navigate(['cardetails'], {
         queryParams: { id: this.object.id },
-      };
+      });
   }
 }
