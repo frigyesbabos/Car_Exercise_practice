@@ -10,6 +10,6 @@ export interface Car {
     Displacement: number;
     horsepower: number;
     weight: number;
-    accelerration: number;
+    acceleration: number;
   };
 }

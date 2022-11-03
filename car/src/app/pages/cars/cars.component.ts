@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./cars.component.css']
 })
 export class CarsComponent implements OnInit {
-  @Input() car$: Car[] =[];
+  @Input() car$: Car[] = [];
 
   cars$: Observable<Car[]>
 

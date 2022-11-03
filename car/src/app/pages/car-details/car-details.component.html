@@ -1,0 +1,23 @@
+<div class="details-container">
+  <h1><b>{{carService.selectedCar!.model}}</b></h1>
+  <div class="image-container"></div>
+  <br>
+  <hr>
+  <li>
+    <ul>Made in {{carService.selectedCar!.origin}}</ul>
+    <ul>First Registration date: {{carService.selectedCar!.firstRegistration}}</ul>
+    <br>
+    <ul><b>Description</b>{{carService.selectedCar!.description}}</ul>
+  </li>
+  <br>
+  <hr>
+  <li>
+    <ul>Km/Gallon: {{carService.selectedCar!.carDetails.kmPerGallon}}</ul>
+    <ul>Cylinders: {{carService.selectedCar!.carDetails.cylinders}}</ul>
+    <ul>Displacement: {{carService.selectedCar!.carDetails.Displacement}}</ul>
+    <ul>Horsepower: {{carService.selectedCar!.carDetails.horsepower}}</ul>
+    <ul>Weight: {{carService.selectedCar!.carDetails.weight}}</ul>
+    <ul>Accelerration: {{carService.selectedCar!.carDetails.acceleration}}</ul>
+  </li>
+<button class="delete-button" (click)="deleteCar()">Delete Vehicle</button>
+</div>
