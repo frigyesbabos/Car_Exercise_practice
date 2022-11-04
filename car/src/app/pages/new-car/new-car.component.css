@@ -14,17 +14,52 @@
 }
 
 .main-container {
-  width: 800px;
+  width: 1140px;
   height: 800px;
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
+.form-container {
+  align-items: center;
+  display: flexbox;
+  justify-content: center;
+  background-color: rgb(80, 187, 85);
+  border-radius: 5px;
+}
+
 .button-container {
-width: 90%;
-display: flex;
-align-items:flex-start;
-justify-content: center;
-background-color: black;
+  width: 99%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  width: 500px;
+  height: 150px;
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
+}
+
+input {
+  text-align: center;
+}
+
+.error-container {
+  color: white;
+  background-color: rgb(222, 81, 81);
+  border-radius: rgb(122, 5, 5);
+  border: 3px;
+  border-radius: 8px;
+  text-align: center;
 }

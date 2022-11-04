@@ -1,10 +1,37 @@
 <div class="main-container">
-  <form>
-    <input type="text" id="carname" width="500px" />
-    <input type="date" id="date" width="500px" />
-    <input type="text" id="origin" width="500px" />
+  <form [formGroup]="newCarForm" class="form-container">
+    <div class="input-container">
+      Car Model and Type: <br /><input
+        type="text"
+        id="carname"
+        style="width: 300px; border-radius: 6px"
+        placeholder="Enter car Model..."
+        [formControl]="model"
+      />
+      <div *ngIf="model.touched && model.invalid" class="error-container">
+        <p *ngIf="model.hasError('required')">The field is required!</p>
+      </div>
+    </div>
+    <div class="input-container">
+      Choose date <br /><input
+        type="date"
+        id="date"
+        style="width: 300px; border-radius: 6px"
+        placeholder="First registration date..."
+      />
+    </div>
+    <div class="input-container">
+      Choose an Origin:
+      <br />
+      <select>
+        <option>--Choose Origin--</option>
+        <option>GERMANY</option>
+        <option>USA</option>
+        <option>JAPAN</option>
+      </select>
+    </div>
     <div class="button-container">
-      <button class="addcar-container">Add new car!</button>
+      <button class="addcar-container" [disabled]="newCarForm.invalid" type="submit">Add new car!</button>
     </div>
   </form>
 </div>
